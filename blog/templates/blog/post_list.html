@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    hello world
+    <h1> hello world</h1>
+    {% for post in posts %}
+    <h2>{{post.title}}</h2>
+    <p>{{post.text}}</p>
+    {% endfor %}
+
 </body>
 
 </html>
